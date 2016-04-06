@@ -1,0 +1,35 @@
+.Modalitem {
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+
+  h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 20px;
+  }
+
+  p {
+    margin-left: 20px;
+    font-size: 14px;
+  }
+
+  i {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 35px;
+  }
+
+  &:nth-child(2n-1):after {
+    content: '';
+    position: absolute;
+    right: 1px;
+    top: 0px;
+    display: block;
+    width: 2px;
+    height: 100%;
+    background: #251D3D;
+  }
+}

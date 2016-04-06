@@ -1,0 +1,62 @@
+
+
+/**
+ * colors
+ */
+$colors: (
+  jacinth:   #FF4400,   //橘红色
+  orange:    #FF9402,   //橘黄色
+  positive:  #387EF5,   //深蓝色
+  calm:      #11C1F3,   //浅蓝色
+  balanced:  #33CD5F,   //绿色
+  energized: #FFC900,   //黄色
+  assertive: #EF473A,   //红色
+  royal:     #886AEA,   //紫色
+  dark:      #444444,   //黑色
+  stable:    #F1F1F1,   //灰色
+  white:     #FFFFFF,   //白色
+) !default;
+
+
+$jacinth:   #FF4400;   //橘红色
+$orange:    #FF9402;   //橘黄色
+$positive:  #387EF5;   //深蓝色
+$calm:      #11C1F3;   //浅蓝色
+$balanced:  #33CD5F;   //绿色
+$energized: #FFC900;   //黄色
+$assertive: #EF473A;   //红色
+$royal:     #886AEA;   //紫色
+$dark:      #444444;   //黑色
+$stable:    #F1F1F1;   //灰色
+$white:     #FFFFFF;   //白色
+
+/**
+ * color
+ */
+@each $key, $value in $colors {
+  .#{$key}{
+     color: $value
+  }
+}
+/**
+ * background
+ */
+@each $key, $value in $colors {
+  .bg-#{$key}{
+     background: $value
+  }
+}
+
+$theme: map-get($colors, jacinth) !default; //主题配色
+$bg: $white; // 默认白色背景
+$fontColor: #303030; // 默认字体颜色
+$noteColor: #88888D; // 灰色字体颜色
+$borderColor: #E0E0E0; // 默认边框颜色
+
+
+/**
+ * height
+ */
+
+$barHeight: 50px; // 头部高度
+$rowHeight: 35px; // 一个默认行高

@@ -1,0 +1,34 @@
+.Avatar {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+  padding-left: 100px;
+
+  img {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 20px;
+    top: 10px;
+    border-radius: 50%;
+  }
+
+  h2 {
+    padding-top: 20px;
+  }
+
+  p {
+    max-height: 20px;
+    line-height: 20px;
+  }
+}
+
+.Avatar.dark {
+  h2 {
+    color: #EAEAED;
+  }
+  p {
+    color: #D2D2D2;
+  }
+}
